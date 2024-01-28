@@ -4,15 +4,46 @@ body {
   background-color: #fff;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+.conteiner {
+  width: 100%;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* ===============HEADER=============== */
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 
 .header-logo {
   color: #4d5ae5;
@@ -22,10 +53,26 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .header-logo-color {
   color: #2e2f42;
+}
+
+.header-conteiner {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-menu-link {
@@ -34,6 +81,9 @@ a {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
 }
 
 .header-menu-link:hover,
@@ -43,9 +93,12 @@ a {
 
 .header-address {
   font-style: normal;
+  margin-left: auto;
 }
 
 .header-address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-address-item {
@@ -79,6 +132,9 @@ a {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  padding-top: 188px;
+  margin: 0 auto;
 }
 
 .main-business-btn {
@@ -88,11 +144,16 @@ a {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  padding: 16px 32px;
+  border-radius: 4px;
 }
 
 .main-business-btn {
   cursor: pointer;
   background-color: #4d5ae5;
+  margin-top: 48px;
+  margin-bottom: 188px;
+  text-align: center;
 }
 
 .main-business-btn:hover,
@@ -108,9 +169,14 @@ a {
 }
 
 .features-list {
+  display: flex;
+  gap: 24px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .features-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .features-subtitle {
@@ -119,6 +185,7 @@ a {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .features-item-text {
@@ -141,13 +208,20 @@ a {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-top: 120px;
+  margin-bottom: 72px;
 }
 
 .our-team-list {
+  display: flex;
+  gap: 24px;
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .our-team-item {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 120px;
 }
 
 .our-team-picture {
@@ -160,6 +234,8 @@ a {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .our-team-text {
@@ -168,6 +244,7 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
 }
 
 .our-team {
@@ -176,7 +253,7 @@ a {
 
 /* ============================== */
 
-/* ==============OUR PORTFOLIO================ */
+/* ================OUR PORTFOLIO================ */
 
 .portfolio {
 }
@@ -188,12 +265,20 @@ a {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-top: 120px;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  padding-bottom: 120px;
 }
 
 .portfolio-item {
+  border: 1px solid #e7e9fc;
+  width: calc((100% - 2 * 24px) / 3);
 }
 
 .portfolio-picture {
@@ -205,6 +290,10 @@ a {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .portfolio-text {
@@ -212,6 +301,9 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /* ============================== */
@@ -241,6 +333,13 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-top: 16px;
+  max-width: 264px;
+}
+
+.footer-conteiner {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /* ============================== */
