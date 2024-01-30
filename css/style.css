@@ -320,11 +320,7 @@ img {
 
 .footer {
   background: #2e2f42;
-}
-
-.footer-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 
 .footer-logo {
