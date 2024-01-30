@@ -26,13 +26,6 @@ a {
   text-decoration: none;
 }
 
-.conteiner {
-  width: 100%;
-  max-width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 img {
   display: block;
 }
@@ -40,6 +33,13 @@ img {
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /* ===============HEADER=============== */
@@ -63,7 +63,7 @@ img {
   color: #2e2f42;
 }
 
-.header-conteiner {
+.header-container {
   display: flex;
   align-items: center;
 }
